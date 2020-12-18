@@ -1,0 +1,11 @@
+{
+  "name": "gcal-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.9.7",
+    "googleapis": "39",
+    "open": "^7.3.0"
+  }
+}
