@@ -107,7 +107,7 @@ function listEvents(auth) {
         }
 
         // Meet がそもそも設定されていない場合はreturnする
-        if (event.conferenceData.conferenceId) {
+        if (!event.conferenceData.conferenceId) {
           return false;
         }
 
