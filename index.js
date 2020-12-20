@@ -106,6 +106,11 @@ function listEvents(auth) {
           return false;
         }
 
+        // Meet がそもそも設定されていない場合はreturnする
+        if (event.conferenceData.conferenceId) {
+          return false;
+        }
+
         const gcalUrl = `https://meet.google.com/${event.conferenceData.conferenceId}`;
         if (gcalUrl) {
           (async () => {
